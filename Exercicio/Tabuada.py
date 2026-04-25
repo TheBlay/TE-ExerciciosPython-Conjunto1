@@ -6,6 +6,8 @@ def validaNumero(valor):
     while True:
         try:
             numero = float(input(valor).strip().replace(",", "."))
+            if numero.is_integer(): # Como o nome diz, is_integer() checa se é um numero inteiro, poupando os decimais se o usuário não digitar um float
+                numero = int(numero)
         except ValueError:
             print("Valor inválido: digite um número.")
         else:
