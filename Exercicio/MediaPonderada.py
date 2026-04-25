@@ -1,4 +1,5 @@
 # Henrique Blay Barboza - RA: 1290482612001
+# Veja também pelo GitHub! => https://github.com/TheBlay/TE-ExerciciosPython-Conjunto1
 
 # Calcule a média ponderada de 3 notas informadas pelo usuário, sendo:
 # P1 peso 4, P2 peso 4 e T peso 2

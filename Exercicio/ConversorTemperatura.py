@@ -1,4 +1,5 @@
 # Henrique Blay Barboza - RA: 1290482612001
+# Veja também pelo GitHub! => https://github.com/TheBlay/TE-ExerciciosPython-Conjunto1
 
 # Peça uma temperatura em Celsius e a converta para Fahrenheit
 # F = (C * 9/5) + 32

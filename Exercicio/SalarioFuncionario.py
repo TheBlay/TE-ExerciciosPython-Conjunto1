@@ -1,4 +1,5 @@
 # Henrique Blay Barboza - RA: 1290482612001
+# Veja também pelo GitHub! => https://github.com/TheBlay/TE-ExerciciosPython-Conjunto1
 
 # Peça o salário de um funcionário e calcule um aumento de 10%
 

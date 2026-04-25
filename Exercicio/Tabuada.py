@@ -1,4 +1,5 @@
 # Henrique Blay Barboza - RA: 1290482612001
+# Veja também pelo GitHub! => https://github.com/TheBlay/TE-ExerciciosPython-Conjunto1
 
 # O usuário informa qual o número que deseja que seja mostrada a tabuada
 
