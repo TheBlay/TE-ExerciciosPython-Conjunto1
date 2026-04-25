@@ -2,14 +2,24 @@
 
 # Peça o salário de um funcionário e calcule um aumento de 10%
 
+
 def validaValor(valor):
     while True:
         try:
-            resultado = float(input(valor))
-        except ValueError:
-            print("Valor inválido: digite um número.")
-        else:
+            try: # Esse tenta atribuir e dispara um raise com msg diferente para cada condição de erro. O except fora do bloco que exibe o erro adequado
+                resultado = float(input(valor).strip().replace(",", "."))
+            except ValueError:
+                    raise ValueError("Digite um número.")
+            
+            if resultado <= 0:  
+                    raise ValueError("Digite um valor maior que zero.")
+            
             return resultado
+    
+        except ValueError as e:
+            print(f"Valor inválido: {e}")
+        
+            
         
 aumento = 0.10
         
