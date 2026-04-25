@@ -8,20 +8,20 @@ P1_PESO = 4
 P2_PESO = 4
 T_PESO = 2
 
-# Coloquei exceções customizadas pra especificar os erros
-
-# Coloquei uma validação básica de entrada
-# transformei a validação em função pra evitar amontoar um monte de código igual
+# Transformei a validação em função pra evitar amontoar um monte de código igual
 def validaNota(nota):
     while True:
         try:
-            nota = float(input(nota).strip().replace(",", "."))
+            try:
+                nota = float(input(nota).strip().replace(",", "."))
+            except ValueError:
+                raise ValueError("Digite um número.")
             if not 0 <= nota <= 10:
-                raise ValueError("Valor Inválido. Digite um valor entre 0 e 10.")
-        except ValueError:
-            print("Valor inválido: digite um número de 0 a 10.")
-        else:
+                raise ValueError("Digite um valor entre 0 e 10.")
+            
             return nota
+        except ValueError as e:
+                print(f"Valor inválido: {e}")
         
 
 nota1 = validaNota("Digite a nota da P1: ")
